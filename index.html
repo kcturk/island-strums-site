@@ -128,6 +128,22 @@ section{padding:80px 0}
 .towns span{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:10px 16px;font-weight:600}
 .note{color:var(--ink-soft);font-size:15px;margin-top:14px}
 
+
+/* reviews */
+.reviews{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.reviews .wrap{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:center}
+.score{display:flex;align-items:center;gap:16px;margin:10px 0 18px}
+.score .big{font-family:Fraunces,serif;font-size:64px;font-weight:800;line-height:1;color:var(--sea-deep)}
+.score .st{color:var(--sun);font-size:24px;letter-spacing:3px}
+.score small{display:block;color:var(--ink-soft);font-size:15px}
+.quote{background:var(--foam);border-radius:var(--radius);padding:28px;position:relative}
+.quote::before{content:"\201C";font-family:Fraunces,serif;font-size:90px;line-height:1;color:var(--sea);opacity:.25;position:absolute;top:6px;right:22px}
+.quote .st{color:var(--sun);letter-spacing:2px}
+.quote p{font-size:19px;margin:8px 0 14px;position:relative}
+.quote cite{font-style:normal;font-weight:600;color:var(--sea-deep)}
+.quote cite span{font-weight:400;color:var(--ink-soft)}
+@media (max-width:760px){.reviews .wrap{grid-template-columns:1fr}}
+
 /* faq */
 .faq details{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:10px}
 .faq summary{font-weight:600;cursor:pointer;list-style:none}
@@ -175,7 +191,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <a class="btn btn-sun" href="tel:+18168202917">Call for a free quote</a>
       <a class="btn btn-ghost" href="sms:+18168202917">Text us</a>
     </div>
-    <div class="stars"><b>★★★★★</b> 5.0 on Google · 22 reviews</div>
+    <a class="stars" href="#reviews" style="color:#fff;text-decoration:none"><b>★★★★★</b> 5.0 on Google · 22+ reviews</a>
   </div>
   <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c120-20 240-20 360 0s240 20 360 0 240-20 360 0 240 20 360 0v30H0z" fill="#fbf6ec"/></svg>
 </div>
@@ -233,6 +249,22 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Reviews</div>
+      <h2>What neighbors say</h2>
+      <div class="score"><div class="big">5.0</div><div><div class="st">★★★★★</div><small>22+ reviews on Google</small></div></div>
+      <a class="btn btn-sea" href="https://www.google.com/maps/search/?api=1&amp;query=Island+Strums+Pool+Cleaning+Venice+FL" target="_blank" rel="noopener">Read all our Google reviews</a>
+    </div>
+    <figure class="quote">
+      <div class="st">★★★★★</div>
+      <p>Rob has totally managed our pool since May 2025 and it looks great every single time. Clear blue and perfect.</p>
+      <cite>Bart M. <span>· Nokomis · Google review</span></cite>
+    </figure>
   </div>
 </section>
 
