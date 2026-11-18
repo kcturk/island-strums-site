@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://islandstrumspools.com/sitemap.xml
